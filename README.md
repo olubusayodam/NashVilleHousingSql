@@ -1,5 +1,5 @@
-# Data Cleaning in SQL
-#  Project Name: Nashville Housing Data
+
+#  Nashville Housing Data Cleaning in SQL
 
 ----
 # Project Objective:
