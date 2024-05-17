@@ -9,7 +9,7 @@ The objective of this project is to perform data cleaning on the housing dataset
 
 -----
 # Data Sourcing:
-The housing dataset used will be attached to this repository.
+The housing dataset used is attached to this repository.
 
 
 
@@ -21,10 +21,10 @@ Below are the key data cleaning steps performed on the housing dataset:
 A new column, "SaleDateConverted," was added to the dataset to store the converted sale dates. The existing "SaleDate" values were transformed into the proper date format using the SQL `CONVERT` function.
 
 2. Populate Property Address Data:
-To fill in missing "PropertyAddress" values, we utilized a self-join on the "housing" table based on common "ParcelID." Rows with missing addresses were populated with non-null addresses from other rows having the same "ParcelID."
+To fill in missing "PropertyAddress" values, I utilized a self-join on the "housing" table based on common "ParcelID." Rows with missing addresses were populated with non-null addresses from other rows having the same "ParcelID."
 
 3. Breaking Out Address into Individual Columns:
-We split the "PropertyAddress" into two separate columns, "Address" and "RestOfAddress," using the comma (',') as a separator. This allowed us to analyze and extract specific address components easily.
+I split the "PropertyAddress" into two separate columns, "Address" and "RestOfAddress," using the comma (',') as a separator. This allowed me to analyze and extract specific address components easily.
 
 4. Add and Update New Columns for Address:
 New columns, "PropertySplitAddress" and "PropertySplitCity," were added to the "housing" table to store the split address components. These columns were populated using SQL queries with appropriate `SUBSTRING` and `CHARINDEX` functions.
